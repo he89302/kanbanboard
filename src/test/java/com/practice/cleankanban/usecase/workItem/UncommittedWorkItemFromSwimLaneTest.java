@@ -33,7 +33,7 @@ public class UncommittedWorkItemFromSwimLaneTest {
     public void uncommitted_the_first_work_itme_from_swim_lane() throws WipLimitExceedException {
         assertEquals(2, todo.getDefaultSwimLaneOfMiniStage().getCommittedWorkItems().size());
 
-        boolean result = todo.getDefaultSwimLaneOfMiniStage().uncommittedWorkItemById(ooad.getId());
+        boolean result = todo.uncommittedWorkItemFromSwimLaneById(ooad.getId(), todo.getDefaultSwimLaneOfMiniStage().getId());
 
         assertTrue(result);
         assertEquals(1, todo.getDefaultSwimLaneOfMiniStage().getCommittedWorkItems().size());

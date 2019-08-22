@@ -19,7 +19,7 @@ public class Utility {
         AddStageInput addStageInputForDone = AddStageUseCaseImpl.createInput();
 
         addStageInputForToDo.setStageName("ToDo");
-        addStageInputForDoing.setBoardId("223-12dsf-63344-ddf");
+        addStageInputForToDo.setBoardId("223-12dsf-63344-ddf");
 
         addStageInputForDoing.setStageName("Doing");
         addStageInputForDoing.setBoardId("223-12dsf-63344-ddf");

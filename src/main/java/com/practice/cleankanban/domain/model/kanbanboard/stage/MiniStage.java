@@ -4,7 +4,10 @@ import com.practice.cleankanban.domain.Entity;
 import com.practice.cleankanban.domain.model.DomainEventPublisher;
 import com.practice.cleankanban.domain.model.kanbanboard.stage.event.MiniStageCreated;
 
+import de.cronn.reflection.util.immutable.ImmutableProxy;
+
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class MiniStage extends Entity {
@@ -24,6 +27,10 @@ public class MiniStage extends Entity {
         addDefaultSwimLane();
     }
 
+    private void setSwimLanes(Collection<SwimLane> swimLanesCopy) {
+        this.swimLanes = swimLanes;
+    }
+
     private void addDefaultSwimLane() {
         swimLanes.add(new SwimLane(this.getStageId(), this.getId()));
     }
@@ -32,8 +39,11 @@ public class MiniStage extends Entity {
         return swimLanes.size();
     }
 
-    public void createSwimLane(String swimLaneName, String miniStageId) {
-        swimLanes.add(new SwimLane(swimLaneName, miniStageId));
+    public SwimLane createSwimLane() {
+        SwimLane result = new SwimLane(stageId, this.getId());
+        swimLanes.add(result);
+
+        return result;
     }
 
     public SwimLane getDefaultSwimLane() {

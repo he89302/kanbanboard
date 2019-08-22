@@ -12,4 +12,6 @@ public interface StageRepository {
     Stage findById(String stageId);
 
     Stage findByStageName(String name);
+
+    List<Stage> findByBoardId(String boardId);
 }

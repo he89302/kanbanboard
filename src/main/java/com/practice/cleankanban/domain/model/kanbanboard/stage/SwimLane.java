@@ -35,6 +35,11 @@ public class SwimLane extends Entity {
                                                 this.getName()));
     }
 
+    private void setCommittedWorkItems(List<String> workItemIdsCopy) {
+        this.committedWorkItems = workItemIdsCopy;
+    }
+
+
     public void setWipLimit(int wipLimit) {
         this.wipLimit = wipLimit;
     }

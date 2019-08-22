@@ -45,11 +45,11 @@ public class CommittedWorkItemToSwimLaneTest {
         Stage todo = utility.invoke().findByStageName("ToDo");
         SwimLane swimLane = todo.getDefaultSwimLaneOfMiniStage();
 
-        swimLane.setWipLimit(1);
-        swimLane.committedWorkItemById(ooad.getId());
+        todo.setSwimLaneWipLimit(swimLane.getId(), 1);
+        todo.committedWorkItemToSwimLaneById(swimLane.getId(), ooad.getId());
 
         try {
-            swimLane.committedWorkItemById(stv.getId());
+            todo.committedWorkItemToSwimLaneById(swimLane.getId(), stv.getId());
             fail("Should throw a WipLimitExceedException but not.");
         } catch (WipLimitExceedException e) {
             assertEquals("Exceeds WIP Exception : 1", e.getMessage());

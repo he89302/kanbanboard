@@ -1,7 +1,9 @@
 package com.practice.cleankanban.adapter.gateway.kanbanboard;
 
+import com.practice.cleankanban.domain.model.kanbanboard.board.BoardStage;
 import com.practice.cleankanban.domain.model.kanbanboard.stage.Stage;
 import com.practice.cleankanban.usecase.kanbanboard.stage.StageRepository;
+import org.w3c.dom.ls.LSInput;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,5 +39,23 @@ public class InMemoryStageRepository implements StageRepository {
             }
         }
         throw new RuntimeException("Can't find the stage name :" + name);
+    }
+
+    @Override
+    public List<Stage> findByBoardId(String boardId) {
+        List<Stage> stages = new ArrayList<>();
+
+        for (Stage each:stageList
+             ) {
+            if (each.getBoardId().equals(boardId)) {
+                stages.add(each);
+            }
+        }
+
+        if (!stages.isEmpty()) {
+            return stages;
+        } else {
+            throw new RuntimeException("Can't find any stage by board id : " + boardId);
+        }
     }
 }

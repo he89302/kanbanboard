@@ -49,7 +49,7 @@ public class StageAggregateDomainEventTest extends AbstractDomainEventTest {
 
 //    @Test
 //    public void creating_swimlane_publishes_a_SwimLaneCreated_event() {
-//        stage.getDefaultMiniStage().createSwimLane();
+//        stage.getDefaultMiniStage().createSwimLaneForMiniStage();
 //        assertThat(subscriber.expectedResult).startsWith("SwimLaneCreated[name='', id=");
 //    }
 }

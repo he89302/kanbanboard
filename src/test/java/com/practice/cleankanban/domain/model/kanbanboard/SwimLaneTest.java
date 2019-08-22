@@ -9,9 +9,6 @@ import static org.junit.Assert.assertEquals;
 public class SwimLaneTest {
     @Test
     public void test_swim_lane_set_wip_limit_works() {
-        Stage stage = new Stage("ToDo", "fake_board_id");
-        SwimLane swimLane = stage.getDefaultSwimLaneOfMiniStage();
-        swimLane.setWipLimit(5);
-        assertEquals(5, swimLane.getWipLimit());
+
     }
 }

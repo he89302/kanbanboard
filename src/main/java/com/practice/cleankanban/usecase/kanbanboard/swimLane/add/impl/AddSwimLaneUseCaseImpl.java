@@ -16,7 +16,7 @@ public class AddSwimLaneUseCaseImpl implements AddSwimLaneUseCase {
     @Override
     public void execute(AddSwimLaneInput input, AddSwimLaneOutput output) {
         Stage stage = repository.findById(input.getStageId());
-        stage.createSwimLane(input.getSwimLaneName(), input.getMiniStageId());
+        stage.createSwimLaneForMiniStage(input.getMiniStageId());
         repository.save(stage);
     }
 

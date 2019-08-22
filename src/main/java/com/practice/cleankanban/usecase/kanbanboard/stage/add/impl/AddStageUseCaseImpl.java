@@ -30,6 +30,7 @@ public class AddStageUseCaseImpl implements AddStageUseCase {
         private String stageName;
         private String boardId;
 
+        @Override
         public String getStageName() {
             return stageName;
         }
@@ -39,10 +40,12 @@ public class AddStageUseCaseImpl implements AddStageUseCase {
             this.stageName = stageName;
         }
 
+        @Override
         public String getBoardId() {
             return boardId;
         }
 
+        @Override
         public void setBoardId(String boardId) {
             this.boardId = boardId;
         }

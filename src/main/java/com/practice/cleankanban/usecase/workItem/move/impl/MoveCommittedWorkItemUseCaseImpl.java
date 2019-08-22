@@ -27,8 +27,8 @@ public class MoveCommittedWorkItemUseCaseImpl implements MoveCommittedWorkItemUs
         Stage fromStage = stageRepository.findById(workItem.getStageId());
         Stage toStage = stageRepository.findById(input.getStageId());
 
-        SwimLane fromSwimLane = fromStage.getMiniStagById(workItem.getMiniStageId()).getSwimLaneById(workItem.getSwimLaneId());
-        SwimLane toSwimLane = toStage.getMiniStagById(input.getMiniStageId()).getSwimLaneById(input.getSwimLaneId());
+        SwimLane fromSwimLane = fromStage.getSwimLaneById(workItem.getSwimLaneId());
+        SwimLane toSwimLane = toStage.getSwimLaneById(input.getSwimLaneId());
 
         fromStage.uncommittedWorkItemFromSwimLaneById(input.getWorkItemId(), fromSwimLane.getId());
         try {
