@@ -14,10 +14,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/GetStagesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+            <state relative-caret-position="645">
+              <caret line="43" column="3" lean-forward="true" selection-end-line="44" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#1910#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -389,7 +389,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566740157512" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566743324459" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -529,7 +529,7 @@
       <workItem from="1565104375062" duration="5366000" />
       <workItem from="1565501645384" duration="24975000" />
       <workItem from="1566096003356" duration="19775000" />
-      <workItem from="1566739501165" duration="1351000" />
+      <workItem from="1566739501165" duration="1645000" />
     </task>
     <servers />
   </component>
@@ -566,7 +566,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51618000" />
+    <option name="totallyTimeSpent" value="51912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -1111,10 +1111,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/GetStagesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+        <state relative-caret-position="645">
+          <caret line="43" column="3" lean-forward="true" selection-end-line="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#1910#0" expanded="true" />
           </folding>
         </state>
       </provider>
