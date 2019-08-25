@@ -31,9 +31,12 @@ public class SingleStagePresenter implements AddStageOutput {
 
         useCase.execute(input, output);
 
-        StageModel model = SingleStagePresenter.createStageModel(output);
+        if (!output.getStageId().isEmpty()) {
+            StageModel model = SingleStagePresenter.createStageModel(output);
+            return ResponseEntity.status(HttpStatus.OK).body(model);
+        }
 
-        return ResponseEntity.status(HttpStatus.OK).body(model);
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
     }
 
     public ResponseEntity getStageRestfulAPI(@PathVariable String stageId) {

@@ -2,76 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940f0abc-6b07-4ada-bd47-ca986f6006af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/AbstractHibernateSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/HibernateStageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryBoardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/SpringHibernateSessionProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleBoardPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStageOfBoardPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/modal/stage/StageModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/application/console/spring/CleankanbanApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/application/console/spring/config/RepositoryConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/board/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/board/BoardStage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/event/StageUpdated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/board/BoardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageOfBoardInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageOfBoardOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageOfBoardUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/board/add/AddBoardInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/board/add/AddBoardOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/board/add/AddBoardUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/board/add/impl/AddBoardUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/board/impl/CreateStageOfBoardUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/update/SingleUpdateStagePresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/update/UpdateStageInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/update/UpdateStageOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/update/UpdateStageUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/update/impl/UpdateStageUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/board/AddBoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageInBoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/UpdateStageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleankanban.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/CleankanbanApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryStageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryStageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/GetStagesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStagePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStagePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/MiniStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/MiniStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/SwimLane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/SwimLane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/StageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/StageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/add/impl/AddStageUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/add/impl/AddStageUseCaseImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/impl/AddSwimLaneUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/impl/AddSwimLaneUseCaseImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/domain/model/kanbanboard/SwimLaneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/domain/model/kanbanboard/SwimLaneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/domain/model/kanbanboard/stage/StageAggregateDomainEventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/domain/model/kanbanboard/stage/StageAggregateDomainEventTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/AddStageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/AddStageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/CommittedWorkItemToSwimLaneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/CommittedWorkItemToSwimLaneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/UncommittedWorkItemFromSwimLaneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/UncommittedWorkItemFromSwimLaneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/CleankanbanApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryStageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryStageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/workItem/InMemoryWorkItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/workItem/InMemoryWorkItemRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStagePresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStagePresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEventPublisher$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEventPublisher$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEventPublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEventPublisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/MiniStage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/MiniStage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/Stage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/Stage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/SwimLane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/SwimLane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/StageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/StageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/impl/AddStageUseCaseImpl$AddStageInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/impl/AddStageUseCaseImpl$AddStageInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/impl/AddSwimLaneUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/impl/AddSwimLaneUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/CycleTimeCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/CycleTimeCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/FlowEntryPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/FlowEntryPair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/SwimLaneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/SwimLaneTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/Utility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/domainevent/EventSourcingSubscriberTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/domainevent/EventSourcingSubscriberTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/stage/AddStageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/stage/AddStageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CalculateCycleTimeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CalculateCycleTimeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CommittedWorkItemToSwimLaneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CommittedWorkItemToSwimLaneTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/UncommittedWorkItemFromSwimLaneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/UncommittedWorkItemFromSwimLaneTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,36 +15,60 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStagePresenter.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/GetStagesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="558">
+              <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
-                <element signature="e#1297#1298#0" expanded="true" />
-                <element signature="e#1357#1358#0" expanded="true" />
-                <element signature="e#1395#1396#0" expanded="true" />
-                <element signature="e#1445#1446#0" expanded="true" />
-                <element signature="e#1477#1478#0" expanded="true" />
-                <element signature="e#1536#1537#0" expanded="true" />
-                <element signature="e#1573#1574#0" expanded="true" />
-                <element signature="e#1625#1626#0" expanded="true" />
-                <element signature="e#1659#1660#0" expanded="true" />
-                <element signature="e#1727#1728#0" expanded="true" />
-                <element signature="e#1773#1774#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/application/console/spring/CleankanbanApplication.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/Stage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            <state relative-caret-position="60">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/StageRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/Utility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="13" column="78" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/AddStageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/UpdateStageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="37" column="61" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="37" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -118,15 +76,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/modal/stage/StageModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="345">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
                 <element signature="e#1044#1045#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
+                <element signature="e#1074#1075#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/add/impl/AddStageUseCaseImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
+            <state relative-caret-position="165">
               <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding>
                 <element signature="e#617#618#0" expanded="true" />
@@ -148,7 +102,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryStageRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
+            <state relative-caret-position="570">
               <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
             </state>
           </provider>
@@ -157,7 +111,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageInBoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
+            <state relative-caret-position="405">
               <caret line="42" column="34" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -187,8 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/CommittedWorkItemToSwimLaneTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/UncommittedWorkItemFromSwimLaneTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/MiniStage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/impl/AddSwimLaneUseCaseImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/CleankanbanApplication.java" />
@@ -238,6 +190,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/modal/stage/StageModal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/modal/stage/StageModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStagePresenter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/GetStageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/GetStagesTest.java" />
       </list>
     </option>
   </component>
@@ -261,7 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -323,7 +276,7 @@
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="practice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="cleankanban" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="domain" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="usecase" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="cleankanban" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -334,20 +287,7 @@
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="practice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="cleankanban" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="domain" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="cleankanban" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="cleankanban" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="practice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="cleankanban" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="domain" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="usecase" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="kanbanboard" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -359,8 +299,83 @@
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="practice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="cleankanban" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="domain" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="usecase" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="kanbanboard" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="stage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="cleankanban" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="cleankanban" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="cleankanban" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="cleankanban" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="cleankanban" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="cleankanban" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="cleankanban" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="cleankanban" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="practice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="cleankanban" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="cleankanban" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="practice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cleankanban" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="cleankanban" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="cleankanban" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="practice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cleankanban" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="usecase" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="cleankanban" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="cleankanban" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="practice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cleankanban" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="usecase" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="kanbanboard" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="cleankanban" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="cleankanban" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="practice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cleankanban" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="usecase" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="kanbanboard" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="stage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
@@ -368,6 +383,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -378,7 +394,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566482035421" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566739723771" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -517,7 +533,8 @@
       <workItem from="1562605911358" duration="151000" />
       <workItem from="1565104375062" duration="5366000" />
       <workItem from="1565501645384" duration="24975000" />
-      <workItem from="1566096003356" duration="18222000" />
+      <workItem from="1566096003356" duration="19775000" />
+      <workItem from="1566739501165" duration="653000" />
     </task>
     <servers />
   </component>
@@ -554,13 +571,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48714000" />
+    <option name="totallyTimeSpent" value="50920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30758226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3118741" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -634,13 +651,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/board/add/AddBoardOutput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/board/add/AddBoardInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -944,16 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageInBoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/HibernateStageRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -963,20 +963,6 @@
             <element signature="e#1121#1122#0" expanded="true" />
             <element signature="e#1148#1149#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/StageRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/UpdateStageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="50" column="81" selection-start-line="50" selection-start-column="71" selection-end-line="50" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -1011,16 +997,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/Utility.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/add/AddStageInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="24" column="64" lean-forward="true" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+        <state relative-caret-position="105">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/restfulapi/stageRestful.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/MiniStage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStagePresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2336#2337#0" expanded="true" />
+            <element signature="e#2366#2367#0" expanded="true" />
+            <element signature="e#2426#2427#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2514#2515#0" expanded="true" />
+            <element signature="e#2546#2547#0" expanded="true" />
+            <element signature="e#2605#2606#0" expanded="true" />
+            <element signature="e#2642#2643#0" expanded="true" />
+            <element signature="e#2694#2695#0" expanded="true" />
+            <element signature="e#2728#2729#0" expanded="true" />
+            <element signature="e#2796#2797#0" expanded="true" />
+            <element signature="e#2842#2843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/application/console/spring/CleankanbanApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/modal/stage/StageModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/add/impl/AddStageUseCaseImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="165">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
             <element signature="e#617#618#0" expanded="true" />
@@ -1029,10 +1063,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/add/AddStageInput.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryStageRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="570">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageInBoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,77 +1087,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryStageRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/UpdateStageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="37" column="61" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="37" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/restfulapi/stageRestful.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/Utility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="13" column="78" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/application/console/spring/CleankanbanApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/StageRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/modal/stage/StageModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/MiniStage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+        <state relative-caret-position="225">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="120" column="51" lean-forward="true" selection-start-line="120" selection-start-column="51" selection-end-line="120" selection-end-column="51" />
+        <state relative-caret-position="60">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStagePresenter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/stage/GetStagesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="558">
+          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1625#1626#0" expanded="true" />
-            <element signature="e#1659#1660#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
           </folding>
         </state>
       </provider>
