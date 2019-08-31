@@ -1,23 +1,35 @@
 package com.practice.cleankanban.usecase.kanbanboard.stage.get;
 
 import com.practice.cleankanban.domain.model.kanbanboard.stage.Stage;
+import com.practice.cleankanban.usecase.kanbanboard.DtoConvertor;
+import com.practice.cleankanban.usecase.kanbanboard.board.BoardRepository;
 import com.practice.cleankanban.usecase.kanbanboard.stage.StageRepository;
 
 import java.util.List;
 
 public class GetStagesUseCaseImpl implements GetStagesUseCase {
 
-    private StageRepository repository;
+    private StageRepository stageRepository;
+    private BoardRepository boardRepository;
 
-    public GetStagesUseCaseImpl(StageRepository repository) {
-        this.repository = repository;
+    public GetStagesUseCaseImpl(BoardRepository boardRepository,
+                                StageRepository stageRepository) {
+        this.boardRepository = boardRepository;
+        this.stageRepository = stageRepository;
     }
 
     @Override
     public void execute(GetStagesInput input, GetStagesOutput output) {
 
-        List<Stage> stages = repository.findByBoardId(input.getBoardId());
-        output.setStages(stages);
+        List<Stage> stages;
+
+        if (input.isGetAllStage()) {
+            stages = stageRepository.findAll();
+        } else  {
+            stages = stageRepository.findByBoardId(input.getBoardId());
+        }
+
+        output.setStages(DtoConvertor.convertDtoList(stages, boardRepository));
     }
 
     public static GetStagesInput createInput() {

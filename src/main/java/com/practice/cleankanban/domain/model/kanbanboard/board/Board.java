@@ -31,4 +31,27 @@ public class Board extends Entity {
         boardStage.setOrdering(boardStages.size() + 1);
         boardStages.add(boardStage);
     }
+
+    public int getStageOrderingByStageId(String id) {
+        for (BoardStage each:boardStages
+             ) {
+            if (each.getStageId().equalsIgnoreCase(id)) {
+                return each.getOrdering();
+            }
+        }
+
+        throw new RuntimeException("Can't find stage : " + id + " on the board.");
+    }
+
+    public boolean isContainStage(String stageId) {
+        boolean result = false;
+        for (BoardStage each:boardStages
+             ) {
+            if (each.getStageId().equalsIgnoreCase(stageId)) {
+                result = true;
+            }
+        }
+
+        return result;
+    }
 }

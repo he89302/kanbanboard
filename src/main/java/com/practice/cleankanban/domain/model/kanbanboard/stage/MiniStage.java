@@ -8,6 +8,7 @@ import de.cronn.reflection.util.immutable.ImmutableProxy;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class MiniStage extends Entity {
@@ -66,5 +67,9 @@ public class MiniStage extends Entity {
 
     public void setStageId(String id) {
         this.stageId = id;
+    }
+
+    public List<SwimLane> getSwimLanes() {
+        return Collections.unmodifiableList(swimLanes);
     }
 }

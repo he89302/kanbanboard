@@ -48,7 +48,7 @@ public class EventSourcingSubscriberTest extends AbstractDomainEventTest {
         AddStageInput addStageInputForDone = AddStageUseCaseImpl.createInput();
 
         addStageInputForToDo.setStageName("ToDo");
-        addStageInputForDoing.setBoardId("223-12dsf-63344-ddf");
+        addStageInputForToDo.setBoardId("223-12dsf-63344-ddf");
 
         addStageInputForDoing.setStageName("Doing");
         addStageInputForDoing.setBoardId("223-12dsf-63344-ddf");
@@ -73,7 +73,7 @@ public class EventSourcingSubscriberTest extends AbstractDomainEventTest {
 
         assertEquals(3, stage.getDefaultSwimLaneOfMiniStage().getCommittedWorkItems().size());
         assertEquals(15, domainEventRepository.findAll().size());
-        assertThat(domainEventRepository.findAll().get(0).getDetail()).startsWith("StageCreated");
+        assertThat(domainEventRepository.findAll().get(0).getDetail()).startsWith("StageCeated");
     }
 
 }
