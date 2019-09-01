@@ -54,4 +54,50 @@ public class Board extends Entity {
 
         return result;
     }
+
+	public void reorderBoardStage(String stageId, int oldPosition, int newPosition) {
+        for (BoardStage each:boardStages) {
+            if (each.getOrdering() == oldPosition) {
+                each.setOrdering(newPosition);
+                continue;
+            }
+            if (this.isMoveForward(oldPosition, newPosition)) {
+                if (isMoveForwardForNotNeededReorderPosition(oldPosition, newPosition, each)) {
+                    continue;
+                }
+                if (isMoveForwardForNeededReorderPosition(oldPosition, newPosition, each)) {
+                    each.moveBackward();
+                }
+                
+            } else {//move backward
+                if (isMoveBackwardForNotNeededReorderingPosition(oldPosition, newPosition, each)) {
+                    continue;
+                }
+                if (isMoveBackwardForNeededReorderingPosition(oldPosition, newPosition, each)) {
+                    each.moveForward();
+                }
+            }
+        }
+
+	}
+
+    private boolean isMoveForwardForNeededReorderPosition(int oldPosition, int newPosition, BoardStage each) {
+        return each.getOrdering() < oldPosition && each.getOrdering() >= newPosition;
+    }
+
+    private boolean isMoveForwardForNotNeededReorderPosition(int oldPosition, int newPosition, BoardStage each) {
+        return each.getOrdering() > oldPosition || each.getOrdering() < newPosition;
+    }
+
+    private boolean isMoveBackwardForNeededReorderingPosition(int oldPosition, int newPosition, BoardStage each) {
+        return each.getOrdering() > oldPosition && each.getOrdering() <= newPosition;
+    }
+
+    private boolean isMoveBackwardForNotNeededReorderingPosition(int oldPosition, int newPosition, BoardStage each) {
+        return each.getOrdering() < oldPosition || each.getOrdering() > newPosition;
+    }
+
+    private boolean isMoveForward(int oldPosition, int newPosition) {
+        return oldPosition > newPosition ? true:false;
+    }
 }

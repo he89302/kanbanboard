@@ -5,6 +5,7 @@ import com.practice.cleankanban.domain.Entity;
 
 public class BoardStage extends Entity {
 
+    private static final long serialVersionUID = 1L;
     public static final String DEFAULT_NAME = "";
     private String boardId;
     private String stageId;
@@ -43,7 +44,7 @@ public class BoardStage extends Entity {
         this.ordering = ordering;
     }
 
-    public void moveForwardOrdering() {
+    public void moveForward() {
         ordering--;
     }
 

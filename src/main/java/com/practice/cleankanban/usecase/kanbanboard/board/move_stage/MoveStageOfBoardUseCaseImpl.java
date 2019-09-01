@@ -1,5 +1,7 @@
 package com.practice.cleankanban.usecase.kanbanboard.board.move_stage;
 
+import com.practice.cleankanban.domain.model.kanbanboard.board.Board;
+import com.practice.cleankanban.domain.model.kanbanboard.board.BoardStage;
 import com.practice.cleankanban.usecase.kanbanboard.board.BoardRepository;
 import com.practice.cleankanban.usecase.kanbanboard.board.move_stage.MoveStageOfBoardInput;
 import com.practice.cleankanban.usecase.kanbanboard.board.move_stage.MoveStageOfBoardOutput;
@@ -10,6 +12,7 @@ public class MoveStageOfBoardUseCaseImpl implements MoveStageOfBoardUseCase {
 
     private StageRepository stageRepository;
     private BoardRepository boardRepository;
+    private boolean isMove = false;
 
     public MoveStageOfBoardUseCaseImpl(BoardRepository boardRepository, StageRepository stageRepository) {
         this.boardRepository = boardRepository;
@@ -18,10 +21,24 @@ public class MoveStageOfBoardUseCaseImpl implements MoveStageOfBoardUseCase {
 
     @Override
     public void execute(MoveStageOfBoardInput input, MoveStageOfBoardOutput output) {
-		
+        Board board = boardRepository.findById(input.getBoardId());
+        try{
+            board.reorderBoardStage(input.getStageId(), input.getOldPosition(), input.getNewPosition());
+            setMoveActive(true);
+            output.setMessage("move done");
+        }catch(Exception e) {
+            output.setMessage("move failed");
+        }
+        
+        boardRepository.save(board);
 	}
 
-	public static MoveStageOfBoardInput createInput() {
+	private boolean setMoveActive(boolean arg) {
+        isMove = arg;
+        return isMove;
+    }
+
+    public static MoveStageOfBoardInput createInput() {
 		return new MoveStageOfBoardInputImpl();
     }
     

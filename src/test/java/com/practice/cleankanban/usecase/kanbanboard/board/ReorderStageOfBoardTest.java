@@ -48,6 +48,21 @@ public class ReorderStageOfBoardTest extends AbstractDomainEventTest {
 
     @Test
     public void move_analysis_at_position_2_to_fixBug_at_position_5() {
+        GetStagesUseCase getStagesUseCase = new GetStagesUseCaseImpl(boardRepository, stageRepository);
+        GetStagesInput getStagesInput = GetStagesUseCaseImpl.createInput();
+        GetStagesOutput getStagesOutput = new MultipleStagePresenter();
+
+        getStagesInput.setBoardId(boardId);
+
+        getStagesUseCase.execute(getStagesInput, getStagesOutput);
+
+        assertEquals(1, getStagesOutput.getStages().get(0).getOrdering());//ready
+        assertEquals(2, getStagesOutput.getStages().get(1).getOrdering());//analysis
+        assertEquals(3, getStagesOutput.getStages().get(2).getOrdering());//development
+        assertEquals(4, getStagesOutput.getStages().get(3).getOrdering());//test
+        assertEquals(5, getStagesOutput.getStages().get(4).getOrdering());//fixBug
+        assertEquals(6, getStagesOutput.getStages().get(5).getOrdering());//deploy
+
         MoveStageOfBoardUseCase useCase = new MoveStageOfBoardUseCaseImpl(boardRepository, stageRepository);
         MoveStageOfBoardInput input = MoveStageOfBoardUseCaseImpl.createInput();
         MoveStageOfBoardOutput output = new MoveStageOfBoardMessagePresenter();
@@ -59,6 +74,29 @@ public class ReorderStageOfBoardTest extends AbstractDomainEventTest {
 
         useCase.execute(input, output);
 
+        getStagesUseCase.execute(getStagesInput, getStagesOutput);
+        
+        assertEquals(1, getStagesOutput.getStages().get(0).getOrdering());//ready
+        assertEquals(2, getStagesOutput.getStages().get(2).getOrdering());//development
+        assertEquals(3, getStagesOutput.getStages().get(3).getOrdering());//test
+        assertEquals(4, getStagesOutput.getStages().get(4).getOrdering());//fixBug
+        assertEquals(5, getStagesOutput.getStages().get(1).getOrdering());//analysis
+        assertEquals(6, getStagesOutput.getStages().get(5).getOrdering());//deploy
+    }
+
+    @Test
+    public void move_test_at_position_4_to_ready_at_position_1() {
+        MoveStageOfBoardUseCase useCase = new MoveStageOfBoardUseCaseImpl(boardRepository, stageRepository);
+        MoveStageOfBoardInput input = MoveStageOfBoardUseCaseImpl.createInput();
+        MoveStageOfBoardOutput output = new MoveStageOfBoardMessagePresenter();
+
+        input.setBoardId(boardId);
+        input.setStageId(stageRepository.findByStageName("test").getId());
+        input.setOldPosition(4);
+        input.setNewPosition(1);
+
+        useCase.execute(input, output);
+
         GetStagesUseCase getStagesUseCase = new GetStagesUseCaseImpl(boardRepository, stageRepository);
         GetStagesInput getStagesInput = GetStagesUseCaseImpl.createInput();
         GetStagesOutput getStagesOutput = new MultipleStagePresenter();
@@ -66,19 +104,42 @@ public class ReorderStageOfBoardTest extends AbstractDomainEventTest {
         getStagesInput.setBoardId(boardId);
 
         getStagesUseCase.execute(getStagesInput, getStagesOutput);
-        assertEquals(stageRepository.findAll().get(0).getName(), getStagesOutput.getStages().get(0).getName());
+        
+        assertEquals("move done", output.getMessage());
+        assertEquals(1, getStagesOutput.getStages().get(3).getOrdering());//test
+        assertEquals(2, getStagesOutput.getStages().get(0).getOrdering());//ready
+        assertEquals(3, getStagesOutput.getStages().get(1).getOrdering());//analysis
+        assertEquals(4, getStagesOutput.getStages().get(2).getOrdering());//development
+        assertEquals(5, getStagesOutput.getStages().get(4).getOrdering());//fixBug
+        assertEquals(6, getStagesOutput.getStages().get(5).getOrdering());//deploy
+    }
 
-        assertEquals(stageRepository.findAll().get(0).getDefaultMiniStage().getId(),
-        getStagesOutput.getStages().get(0).getDefaultMiniStage().getId());
+    @Test
+    public void move_test_at_position_4_to_same_position() {
+        MoveStageOfBoardUseCase useCase = new MoveStageOfBoardUseCaseImpl(boardRepository, stageRepository);
+        MoveStageOfBoardInput input = MoveStageOfBoardUseCaseImpl.createInput();
+        MoveStageOfBoardOutput output = new MoveStageOfBoardMessagePresenter();
 
-        assertEquals(stageRepository.findAll().get(0).getDefaultSwimLaneOfMiniStage().getId(),
-        getStagesOutput.getStages().get(0).getDefaultSwimLaneOfMiniStage().getSwimLaneId());
+        input.setBoardId(boardId);
+        input.setStageId(stageRepository.findByStageName("test").getId());
+        input.setOldPosition(4);
+        input.setNewPosition(4);
 
+        useCase.execute(input, output);
 
-        assertEquals(stageRepository.findAll().get(1).getName(), "fixBug");
-        assertEquals(stageRepository.findAll().get(2).getName(), getStagesOutput.getStages().get(2).getName());
-        assertEquals(stageRepository.findAll().get(3).getName(), getStagesOutput.getStages().get(3).getName());
-        assertEquals(stageRepository.findAll().get(4).getName(), "analysis");
-        assertEquals(stageRepository.findAll().get(5).getName(), getStagesOutput.getStages().get(5).getName());
+        GetStagesUseCase getStagesUseCase = new GetStagesUseCaseImpl(boardRepository, stageRepository);
+        GetStagesInput getStagesInput = GetStagesUseCaseImpl.createInput();
+        GetStagesOutput getStagesOutput = new MultipleStagePresenter();
+
+        getStagesInput.setBoardId(boardId);
+
+        getStagesUseCase.execute(getStagesInput, getStagesOutput);
+
+        assertEquals(1, getStagesOutput.getStages().get(0).getOrdering());//ready
+        assertEquals(2, getStagesOutput.getStages().get(1).getOrdering());//analysis
+        assertEquals(3, getStagesOutput.getStages().get(2).getOrdering());//development
+        assertEquals(4, getStagesOutput.getStages().get(3).getOrdering());//test
+        assertEquals(5, getStagesOutput.getStages().get(4).getOrdering());//fixBug
+        assertEquals(6, getStagesOutput.getStages().get(5).getOrdering());//deploy
     }
 }
