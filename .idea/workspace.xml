@@ -2,151 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940f0abc-6b07-4ada-bd47-ca986f6006af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/HibernateStageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/HibernateStageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryStageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryStageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/StageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/StageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/domainEvent/InMemoryDomainEventRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/domainEvent/InMemoryDomainEventRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/kanbanboard/AbstractHibernateSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/kanbanboard/HibernateStageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/kanbanboard/HibernateStageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryBoardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryBoardRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryStageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/kanbanboard/InMemoryStageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/kanbanboard/SpringHibernateSessionProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/kanbanboard/SpringHibernateSessionProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/workItem/InMemoryWorkItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/gateway/workItem/InMemoryWorkItemRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/SingleWorkItemPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/SingleWorkItemPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/MoveStageOfBoardMessagePresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/MoveStageOfBoardMessagePresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/MultipleStagePresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/MultipleStagePresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleBoardPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleBoardPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStageOfBoardPresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStageOfBoardPresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStagePresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleStagePresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/modal/stage/StageModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/adapter/presenter/kanbanboard/modal/stage/StageModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/application/console/spring/CleankanbanApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/application/console/spring/CleankanbanApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/Entity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/common/DateProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/common/DateProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/AbstractDomainEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/AbstractDomainEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEventPublisher$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEventPublisher$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEventPublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEventPublisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEventSubscriber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/DomainEventSubscriber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/EventVersion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/EventVersion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/FlowEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/FlowEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/PersistentDomainEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/PersistentDomainEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/WorkItemMovedIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/WorkItemMovedIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/WipLimitExceedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/WipLimitExceedException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/board/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/board/BoardStage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/board/BoardStage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/MiniStage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/MiniStage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/Stage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/Stage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/SwimLane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/SwimLane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/event/MiniStageCreated.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/event/MiniStageCreated.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/event/StageCreated.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/event/StageCreated.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/event/StageUpdated.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/event/StageUpdated.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/event/SwimLaneCreated.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/event/SwimLaneCreated.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/event/WorkItemMovedOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/event/WorkItemMovedOut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/workItem/WorkItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/workItem/WorkItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/workItem/WorkItemCreated.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/workItem/WorkItemCreated.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/usecase/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/usecase/Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/usecase/Output.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/usecase/Output.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/usecase/UseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/usecase/UseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/DomainEventRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/DomainEventRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/flow/FlowEventSubscriber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/flow/FlowEventSubscriber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/flow/RegisterFlowEventSourcingSubscribeInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/flow/RegisterFlowEventSourcingSubscribeInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/flow/RegisterFlowEventSourcingSubscriberOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/flow/RegisterFlowEventSourcingSubscriberOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/flow/RegisterFlowEventSourcingSubscriberUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/flow/RegisterFlowEventSourcingSubscriberUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/EventSourcingSubscriber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/EventSourcingSubscriber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/RegisterEventSourcingSubscriberInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/RegisterEventSourcingSubscriberInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/RegisterEventSourcingSubscriberOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/RegisterEventSourcingSubscriberOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/RegisterEventSourcingSubscriberUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/RegisterEventSourcingSubscriberUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/impl/RegisterEventSourcingSubscriberUseCaseImpl$RegisterEventSourcingSubscriberInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/impl/RegisterEventSourcingSubscriberUseCaseImpl$RegisterEventSourcingSubscriberInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/impl/RegisterEventSourcingSubscriberUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/domainevent/sourcing/impl/RegisterEventSourcingSubscriberUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/DtoConvertor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/DtoConvertor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/BoardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/BoardRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageOfBoardInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageOfBoardInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageOfBoardOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageOfBoardOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageOfBoardUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageOfBoardUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/add/AddBoardInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/add/AddBoardInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/add/AddBoardOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/add/AddBoardOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/add/AddBoardUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/add/AddBoardUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/add/impl/AddBoardUseCaseImpl$AddBoardInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/add/impl/AddBoardUseCaseImpl$AddBoardInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/add/impl/AddBoardUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/add/impl/AddBoardUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/impl/CreateStageOfBoardUseCaseImpl$CreateStageOfBoardInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/impl/CreateStageOfBoardUseCaseImpl$CreateStageOfBoardInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/impl/CreateStageOfBoardUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/impl/CreateStageOfBoardUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/move_stage/MoveStageOfBoardInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/move_stage/MoveStageOfBoardInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/move_stage/MoveStageOfBoardOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/move_stage/MoveStageOfBoardOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/move_stage/MoveStageOfBoardUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/move_stage/MoveStageOfBoardUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/move_stage/MoveStageOfBoardUseCaseImpl$MoveStageOfBoardInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/move_stage/MoveStageOfBoardUseCaseImpl$MoveStageOfBoardInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/move_stage/MoveStageOfBoardUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/board/move_stage/MoveStageOfBoardUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/add/AddMiniStageInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/add/AddMiniStageInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/add/AddMiniStageOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/add/AddMiniStageOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/add/AddMiniStageUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/add/AddMiniStageUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/add/impl/AddMiniStageUseCaseImpl$AddMiniStageInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/add/impl/AddMiniStageUseCaseImpl$AddMiniStageInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/add/impl/AddMiniStageUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/add/impl/AddMiniStageUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/MiniStageDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/MiniStageDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/StageDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/StageDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/StageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/StageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/SwimLaneDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/SwimLaneDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/AddStageInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/AddStageInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/AddStageOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/AddStageOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/AddStageUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/AddStageUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/impl/AddStageUseCaseImpl$AddStageInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/impl/AddStageUseCaseImpl$AddStageInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/impl/AddStageUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/add/impl/AddStageUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/get/GetStagesInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/get/GetStagesInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/get/GetStagesOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/get/GetStagesOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/get/GetStagesUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/get/GetStagesUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/get/GetStagesUseCaseImpl$GetStagesInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/get/GetStagesUseCaseImpl$GetStagesInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/get/GetStagesUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/get/GetStagesUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/SingleUpdateStagePresenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/SingleUpdateStagePresenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/UpdateStageInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/UpdateStageInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/UpdateStageOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/UpdateStageOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/UpdateStageUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/UpdateStageUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/impl/UpdateStageUseCaseImpl$UpdateStageInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/impl/UpdateStageUseCaseImpl$UpdateStageInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/impl/UpdateStageUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/update/impl/UpdateStageUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/AddSwimLaneInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/AddSwimLaneInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/AddSwimLaneOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/AddSwimLaneOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/AddSwimLaneUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/AddSwimLaneUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/impl/AddSwimLaneUseCaseImpl$AddSwimLaneInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/impl/AddSwimLaneUseCaseImpl$AddSwimLaneInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/impl/AddSwimLaneUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/add/impl/AddSwimLaneUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/CycleTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/CycleTime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/CycleTimeCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/CycleTimeCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/FlowEntryPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/FlowEntryPair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/RegisterFlowEventSourcingSubscriberUseCaseImpl$RegisterFlowEventSubscriberInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/RegisterFlowEventSourcingSubscriberUseCaseImpl$RegisterFlowEventSubscriberInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/RegisterFlowEventSourcingSubscriberUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/RegisterFlowEventSourcingSubscriberUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/WorkItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/WorkItemRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/create/CreateWorkItemInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/create/CreateWorkItemInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/create/CreateWorkItemOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/create/CreateWorkItemOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/create/CreateWorkItemUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/create/CreateWorkItemUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/create/impl/CreateWorkItemUseCaseImpl$CreateWorkItemInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/create/impl/CreateWorkItemUseCaseImpl$CreateWorkItemInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/create/impl/CreateWorkItemUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/create/impl/CreateWorkItemUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/MoveCommittedWorkItemInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/MoveCommittedWorkItemInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/MoveCommittedWorkItemOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/MoveCommittedWorkItemOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/MoveCommittedWorkItemUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/MoveCommittedWorkItemUseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl$MoveCommittedWorkItemInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl$MoveCommittedWorkItemInputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/SwimLaneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/SwimLaneTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/board/BoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/board/BoardTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/stage/AbstractDomainEventTest$FakeStoredSubscriber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/stage/AbstractDomainEventTest$FakeStoredSubscriber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/stage/AbstractDomainEventTest$FakeSubscriber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/stage/AbstractDomainEventTest$FakeSubscriber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/stage/AbstractDomainEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/stage/AbstractDomainEventTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/stage/StageAggregateDomainEventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/domain/model/kanbanboard/stage/StageAggregateDomainEventTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/KanbanboardTestUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/KanbanboardTestUtility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/Utility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/domainevent/EventSourcingSubscriberTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/domainevent/EventSourcingSubscriberTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/board/AddBoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/board/AddBoardTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageInBoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/board/CreateStageInBoardTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/board/ReorderStageOfBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/kanbanboard/board/ReorderStageOfBoardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/board/ReorderStageOfBoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/board/ReorderStageOfBoardTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/addMiniStageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/miniStage/addMiniStageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/stage/AddStageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/stage/AddStageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/stage/GetStagesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/stage/GetStagesTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/stage/UpdateStageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/stage/UpdateStageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/addSwimLaneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/kanbanboard/swimLane/addSwimLaneTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CalculateCycleTimeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CalculateCycleTimeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CommittedWorkItemToSwimLaneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CommittedWorkItemToSwimLaneTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CreateWorkItemTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CreateWorkItemTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/MoveWorkItemOnSwimLaneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/MoveWorkItemOnSwimLaneTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/UncommittedWorkItemFromSwimLaneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/UncommittedWorkItemFromSwimLaneTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,23 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RemoveStageTest.remove_test_stage_on_board">
-    <configuration name="EventSourcingSubscriberTest.create_a_work_item_publishes_a_workItemCreated_event" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cleankanban" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.practice.cleankanban.usecase.domainevent.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.practice.cleankanban.usecase.domainevent" />
-      <option name="MAIN_CLASS_NAME" value="com.practice.cleankanban.usecase.domainevent.EventSourcingSubscriberTest" />
-      <option name="METHOD_NAME" value="create_a_work_item_publishes_a_workItemCreated_event" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ReorderStageOfBoardTest.move_test_at_position_4_to_same_position_then_remove_test_stage_then_move_ready_at_position_1_to_position_5">
     <configuration name="GetStagesTest.test_get_stage_by_board_id" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cleankanban" />
       <extension name="coverage">
@@ -247,21 +89,6 @@
       <option name="MAIN_CLASS_NAME" value="com.practice.cleankanban.usecase.kanbanboard.stage.GetStagesTest" />
       <option name="METHOD_NAME" value="test_get_stage_by_board_id" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KanbanboardTestUtility" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cleankanban" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.practice.cleankanban.usecase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.practice.cleankanban.usecase" />
-      <option name="MAIN_CLASS_NAME" value="com.practice.cleankanban.usecase.KanbanboardTestUtility" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -297,6 +124,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReorderStageOfBoardTest.move_test_at_position_4_to_same_position" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kanbanboard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.practice.cleankanban.usecase.kanbanboard.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.practice.cleankanban.usecase.kanbanboard.board" />
+      <option name="MAIN_CLASS_NAME" value="com.practice.cleankanban.usecase.kanbanboard.board.ReorderStageOfBoardTest" />
+      <option name="METHOD_NAME" value="move_test_at_position_4_to_same_position" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReorderStageOfBoardTest.move_test_at_position_4_to_same_position_then_remove_test_stage_then_move_ready_at_position_1_to_position_5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kanbanboard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.practice.cleankanban.usecase.kanbanboard.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.practice.cleankanban.usecase.kanbanboard.board" />
+      <option name="MAIN_CLASS_NAME" value="com.practice.cleankanban.usecase.kanbanboard.board.ReorderStageOfBoardTest" />
+      <option name="METHOD_NAME" value="move_test_at_position_4_to_same_position_then_remove_test_stage_then_move_ready_at_position_1_to_position_5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CleankanbanApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cleankanban" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.practice.cleankanban.application.console.spring.CleankanbanApplication" />
@@ -306,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReorderStageOfBoardTest.move_test_at_position_4_to_same_position_then_remove_test_stage_then_move_ready_at_position_1_to_position_5" />
+        <item itemvalue="JUnit.ReorderStageOfBoardTest.move_test_at_position_4_to_same_position" />
         <item itemvalue="JUnit.RemoveStageTest.remove_test_stage_on_board" />
         <item itemvalue="JUnit.RemoveStageTest" />
         <item itemvalue="JUnit.GetStagesTest.test_get_stage_by_board_id" />
-        <item itemvalue="JUnit.EventSourcingSubscriberTest.create_a_work_item_publishes_a_workItemCreated_event" />
-        <item itemvalue="JUnit.KanbanboardTestUtility" />
       </list>
     </recent_temporary>
   </component>
@@ -336,7 +195,7 @@
       <workItem from="1567230038544" duration="568000" />
       <workItem from="1567235663195" duration="6971000" />
       <workItem from="1567431837801" duration="490000" />
-      <workItem from="1567432474594" duration="1856000" />
+      <workItem from="1567432474594" duration="3139000" />
     </task>
     <servers />
   </component>
