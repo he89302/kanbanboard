@@ -58,4 +58,9 @@ public class InMemoryStageRepository implements StageRepository {
             throw new RuntimeException("Can't find any stage by board id : " + boardId);
         }
     }
+
+    @Override
+    public void remove(Stage stage) {
+        stageList.remove(stage);
+    }
 }

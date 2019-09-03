@@ -14,4 +14,6 @@ public interface StageRepository {
     Stage findByStageName(String name);
 
     List<Stage> findByBoardId(String boardId);
+
+	void remove(Stage stage);
 }

@@ -100,4 +100,17 @@ public class Board extends Entity {
     private boolean isMoveForward(int oldPosition, int newPosition) {
         return oldPosition > newPosition ? true:false;
     }
+
+	public void removeStageOnBoard(Stage stage) {
+        int removeStageOrder = -1;
+        int lastStageOrder = boardStages.size();
+        for (BoardStage each:boardStages) {
+            if (each.getStageId().equalsIgnoreCase(stage.getId())) {
+                removeStageOrder = each.getOrdering();
+                reorderBoardStage(stage.getId(), removeStageOrder, lastStageOrder);
+                boardStages.remove(each);
+                break;
+            }
+        }
+	}
 }
