@@ -1,17 +1,14 @@
 package com.practice.cleankanban.domain.model.kanbanboard.stage;
 
 import com.practice.cleankanban.domain.Entity;
-import com.practice.cleankanban.domain.model.DomainEvent;
 import com.practice.cleankanban.domain.model.DomainEventPublisher;
 import com.practice.cleankanban.domain.model.WorkItemMovedIn;
 import com.practice.cleankanban.domain.model.kanbanboard.WipLimitExceedException;
 import com.practice.cleankanban.domain.model.kanbanboard.stage.event.SwimLaneCreated;
 import com.practice.cleankanban.domain.model.kanbanboard.stage.event.WorkItemMovedOut;
-import com.practice.cleankanban.domain.model.workItem.WorkItem;
 
 import java.util.ArrayList;
-import java.util.BitSet;
-import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class SwimLane extends Entity {
@@ -20,7 +17,7 @@ public class SwimLane extends Entity {
     private String stageId;
     private String miniStageId;
     private int wipLimit;
-    private List<String> committedWorkItems;
+    private List<CommittedWorkItem> committedWorkItems;
 
     public SwimLane(String stageId, String miniStageId) {
         super(DEFAULT_NAME);
@@ -35,7 +32,7 @@ public class SwimLane extends Entity {
                                                 this.getName()));
     }
 
-    private void setCommittedWorkItems(List<String> workItemIdsCopy) {
+    private void setCommittedWorkItems(List<CommittedWorkItem> workItemIdsCopy) {
         this.committedWorkItems = workItemIdsCopy;
     }
 
@@ -48,8 +45,8 @@ public class SwimLane extends Entity {
         return wipLimit;
     }
 
-    public List<String> getCommittedWorkItems() {
-        return committedWorkItems;
+    public List<CommittedWorkItem> getCommittedWorkItems() {
+        return Collections.unmodifiableList(committedWorkItems);
     }
 
     public void committedWorkItemById(String workItemId) throws WipLimitExceedException {
@@ -57,7 +54,11 @@ public class SwimLane extends Entity {
             throw new WipLimitExceedException("Exceeds WIP Exception : " + wipLimit);
         }
 
-        committedWorkItems.add(workItemId);
+        committedWorkItems.add(new CommittedWorkItem(this.getStageId(),
+                                                     this.getMiniStageId(),
+                                                     this.getId(),
+                                                    workItemId,
+                                                    committedWorkItems.size() + 1));
 
         DomainEventPublisher.instance().
                             publish(new WorkItemMovedIn(
@@ -93,10 +94,13 @@ public class SwimLane extends Entity {
     }
 
     public boolean uncommittedWorkItemById(String workItemId) {
-        for (String each:committedWorkItems
+        for (CommittedWorkItem each:committedWorkItems
              ) {
+            if (!each.isBlock()) {
+                throw new RuntimeException("work item : " + workItemId + " block.");
+            }
             if (each.equals(workItemId)) {
-                committedWorkItems.remove(workItemId);
+                committedWorkItems.remove(each);
 
                 DomainEventPublisher.instance().
                         publish(new WorkItemMovedOut(
