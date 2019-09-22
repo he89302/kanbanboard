@@ -3,9 +3,11 @@ package com.practice.cleankanban.usecase.workItem.move.impl;
 import com.practice.cleankanban.domain.model.kanbanboard.WipLimitExceedException;
 import com.practice.cleankanban.domain.model.kanbanboard.stage.Stage;
 import com.practice.cleankanban.domain.model.kanbanboard.stage.SwimLane;
+import com.practice.cleankanban.domain.model.workItem.Blocker;
 import com.practice.cleankanban.domain.model.workItem.WorkItem;
 import com.practice.cleankanban.usecase.kanbanboard.stage.StageRepository;
 import com.practice.cleankanban.usecase.workItem.WorkItemRepository;
+import com.practice.cleankanban.usecase.workItem.block.impl.BlockerRepository;
 import com.practice.cleankanban.usecase.workItem.move.MoveCommittedWorkItemInput;
 import com.practice.cleankanban.usecase.workItem.move.MoveCommittedWorkItemOutput;
 import com.practice.cleankanban.usecase.workItem.move.MoveCommittedWorkItemUseCase;
@@ -14,10 +16,14 @@ public class MoveCommittedWorkItemUseCaseImpl implements MoveCommittedWorkItemUs
 
     private WorkItemRepository workItemRepository;
     private StageRepository stageRepository;
+    private BlockerRepository blockerRepository;
 
-    public MoveCommittedWorkItemUseCaseImpl(WorkItemRepository workItemRepository, StageRepository stageRepository) {
+    public MoveCommittedWorkItemUseCaseImpl(WorkItemRepository workItemRepository,
+                                            StageRepository stageRepository,
+                                            BlockerRepository blockerRepository) {
         this.workItemRepository = workItemRepository;
         this.stageRepository = stageRepository;
+        this.blockerRepository = blockerRepository;
     }
 
     @Override
@@ -29,20 +35,27 @@ public class MoveCommittedWorkItemUseCaseImpl implements MoveCommittedWorkItemUs
 
         SwimLane fromSwimLane = fromStage.getSwimLaneById(workItem.getSwimLaneId());
         SwimLane toSwimLane = toStage.getSwimLaneById(input.getSwimLaneId());
+        if (!workItemIsBlocked(workItem, blockerRepository)) {
+            fromStage.uncommittedWorkItemFromSwimLaneById(input.getWorkItemId(), fromSwimLane.getId());
+            try {
+                toStage.committedWorkItemToSwimLaneById(input.getSwimLaneId(), workItem.getId());
+                workItem.moveTo(toStage.getId(), toStage.getMiniStagById(input.getMiniStageId()).getId(), toSwimLane.getId());
 
-        fromStage.uncommittedWorkItemFromSwimLaneById(input.getWorkItemId(), fromSwimLane.getId());
-        try {
-            toStage.committedWorkItemToSwimLaneById(input.getSwimLaneId(), workItem.getId());
-            workItem.moveTo(toStage.getId(), toStage.getMiniStagById(input.getMiniStageId()).getId(), toSwimLane.getId());
+                workItemRepository.save(workItem);
+                stageRepository.save(fromStage);
+                stageRepository.save(toStage);
 
-            workItemRepository.save(workItem);
-            stageRepository.save(fromStage);
-            stageRepository.save(toStage);
-
-        } catch (WipLimitExceedException e) {
-            throw new RuntimeException(e.getMessage());
+            } catch (WipLimitExceedException e) {
+                throw new RuntimeException(e.getMessage());
+            }
+        } else {
+            throw new RuntimeException("Work Item : " + workItem.getName() + " is blocked.");
         }
+    }
 
+    private boolean workItemIsBlocked(WorkItem workItem, BlockerRepository blockerRepository) {
+        Blocker blocker = blockerRepository.findAllBlocker().iterator().next();
+        return blocker.isWorkItemBlocked(workItem.getId());
     }
 
     public static MoveCommittedWorkItemInput createInput() {

@@ -2,6 +2,7 @@ package com.practice.cleankanban.usecase.workItem;
 
 import com.practice.cleankanban.adapter.gateway.domainEvent.InMemoryDomainEventRepository;
 import com.practice.cleankanban.adapter.gateway.kanbanboard.InMemoryStageRepository;
+import com.practice.cleankanban.adapter.gateway.workItem.InMemoryBlockerRepository;
 import com.practice.cleankanban.adapter.gateway.workItem.InMemoryWorkItemRepository;
 import com.practice.cleankanban.adapter.presenter.SingleWorkItemPresenter;
 import com.practice.cleankanban.adapter.presenter.kanbanboard.SingleStagePresenter;
@@ -18,6 +19,7 @@ import com.practice.cleankanban.usecase.kanbanboard.stage.add.AddStageInput;
 import com.practice.cleankanban.usecase.kanbanboard.stage.add.AddStageOutput;
 import com.practice.cleankanban.usecase.kanbanboard.stage.add.AddStageUseCase;
 import com.practice.cleankanban.usecase.kanbanboard.stage.add.impl.AddStageUseCaseImpl;
+import com.practice.cleankanban.usecase.workItem.block.impl.BlockerRepository;
 import com.practice.cleankanban.usecase.workItem.create.CreateWorkItemInput;
 import com.practice.cleankanban.usecase.workItem.create.CreateWorkItemOutput;
 import com.practice.cleankanban.usecase.workItem.create.CreateWorkItemUseCase;
@@ -40,6 +42,7 @@ public class MoveWorkItemOnSwimLaneTest extends AbstractDomainEventTest {
     private WorkItem apple;
     private WorkItem stv;
     private StageRepository stageRepository;
+    private BlockerRepository blockerRepository;
     private DomainEventRepository<PersistentDomainEvent> domainEventRepository;
     private WorkItemRepository workItemRepository;
 
@@ -49,6 +52,7 @@ public class MoveWorkItemOnSwimLaneTest extends AbstractDomainEventTest {
         RegisterEventSourcingSubscriberUseCase useCase = new RegisterEventSourcingSubscriberUseCaseImpl(domainEventRepository);
         useCase.execute(null, null);
 
+        blockerRepository = new InMemoryBlockerRepository();
         stageRepository = new InMemoryStageRepository();
         AddStageUseCase addStageUseCase =  new AddStageUseCaseImpl(stageRepository);
         AddStageInput addStageInputForDoing = AddStageUseCaseImpl.createInput();
@@ -109,7 +113,9 @@ public class MoveWorkItemOnSwimLaneTest extends AbstractDomainEventTest {
         assertEquals(2, todo.getDefaultSwimLaneOfMiniStage().getCommittedWorkItems().size());
         assertEquals(0, doing.getDefaultSwimLaneOfMiniStage().getCommittedWorkItems().size());
 
-        MoveCommittedWorkItemUseCase moveCommittedWorkItemUseCase = new MoveCommittedWorkItemUseCaseImpl(workItemRepository, stageRepository);
+        MoveCommittedWorkItemUseCase moveCommittedWorkItemUseCase = new MoveCommittedWorkItemUseCaseImpl(workItemRepository,
+                                                                                                        stageRepository,
+                                                                                                        blockerRepository);
         MoveCommittedWorkItemInput input = MoveCommittedWorkItemUseCaseImpl.createInput();
         input.setWorkItemId(apple.getId());
         input.setToStageId(doing.getId());

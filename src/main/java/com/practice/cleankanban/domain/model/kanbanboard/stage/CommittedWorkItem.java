@@ -11,7 +11,6 @@ public class CommittedWorkItem extends Entity {
     private String swimLaneId;
     private String workItemId;
     private int position;
-    private boolean isBlock;
 
     public CommittedWorkItem(String stageId, String miniStageId, String swimLaneId, String workItemId, int position) {
         super(DEFAULT_NAME);
@@ -20,7 +19,6 @@ public class CommittedWorkItem extends Entity {
         this.swimLaneId = swimLaneId;
         this.workItemId = workItemId;
         this.position = position;
-        this.isBlock = false;
     }
 
     @Override
@@ -77,13 +75,5 @@ public class CommittedWorkItem extends Entity {
 
     public int getPosition() {
         return position;
-    }
-
-    public boolean isBlock() {
-        return isBlock;
-    }
-
-    public void setBlock(boolean block) {
-        isBlock = block;
     }
 }

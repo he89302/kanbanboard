@@ -2,6 +2,7 @@ package com.practice.cleankanban.usecase.workItem;
 
 import com.practice.cleankanban.adapter.gateway.domainEvent.InMemoryDomainEventRepository;
 import com.practice.cleankanban.adapter.gateway.kanbanboard.InMemoryStageRepository;
+import com.practice.cleankanban.adapter.gateway.workItem.InMemoryBlockerRepository;
 import com.practice.cleankanban.adapter.gateway.workItem.InMemoryWorkItemRepository;
 import com.practice.cleankanban.adapter.presenter.SingleWorkItemPresenter;
 import com.practice.cleankanban.adapter.presenter.kanbanboard.SingleStagePresenter;
@@ -12,11 +13,13 @@ import com.practice.cleankanban.domain.model.kanbanboard.stage.AbstractDomainEve
 import com.practice.cleankanban.domain.model.kanbanboard.stage.Stage;
 import com.practice.cleankanban.domain.model.workItem.WorkItem;
 import com.practice.cleankanban.usecase.domainevent.DomainEventRepository;
+import com.practice.cleankanban.usecase.domainevent.flow.impl.RegisterFlowEventSourcingSubscriberUseCaseImpl;
 import com.practice.cleankanban.usecase.kanbanboard.stage.StageRepository;
 import com.practice.cleankanban.usecase.kanbanboard.stage.add.AddStageInput;
 import com.practice.cleankanban.usecase.kanbanboard.stage.add.AddStageOutput;
 import com.practice.cleankanban.usecase.kanbanboard.stage.add.AddStageUseCase;
 import com.practice.cleankanban.usecase.kanbanboard.stage.add.impl.AddStageUseCaseImpl;
+import com.practice.cleankanban.usecase.workItem.block.impl.BlockerRepository;
 import com.practice.cleankanban.usecase.workItem.create.CreateWorkItemInput;
 import com.practice.cleankanban.usecase.workItem.create.CreateWorkItemOutput;
 import com.practice.cleankanban.usecase.workItem.create.CreateWorkItemUseCase;
@@ -47,9 +50,10 @@ public class CalculateCycleTimeTest extends AbstractDomainEventTest {
 
     @Mock
     private StageRepository stageRepository;
-
     private DomainEventRepository<FlowEvent> flowEventRepository;
     private WorkItemRepository workItemRepository;
+    private BlockerRepository blockerRepository;
+
 
     @Before
     public void setUp() throws WipLimitExceedException, ParseException {
@@ -59,6 +63,7 @@ public class CalculateCycleTimeTest extends AbstractDomainEventTest {
         RegisterFlowEventSourcingSubscriberUseCase useCase = new RegisterFlowEventSourcingSubscriberUseCaseImpl(flowEventRepository);
         useCase.execute(null, null);
 
+        blockerRepository = new InMemoryBlockerRepository();
         stageRepository = new InMemoryStageRepository();
         AddStageUseCase addStageUseCase =  new AddStageUseCaseImpl(stageRepository);
         AddStageInput addStageInputForDoing = AddStageUseCaseImpl.createInput();
@@ -121,7 +126,7 @@ public class CalculateCycleTimeTest extends AbstractDomainEventTest {
         assertEquals(2, flowEventRepository.findAll().size());
 
         MoveCommittedWorkItemUseCase moveCommittedWorkItemUseCase =
-                new MoveCommittedWorkItemUseCaseImpl(workItemRepository, stageRepository);
+                new MoveCommittedWorkItemUseCaseImpl(workItemRepository, stageRepository, blockerRepository);
 
         MoveCommittedWorkItemInput input = MoveCommittedWorkItemUseCaseImpl.createInput();
         input.setToStageId(doing.getId());

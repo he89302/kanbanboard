@@ -2,6 +2,7 @@ package com.practice.cleankanban.domain.model.workItem;
 
 import com.practice.cleankanban.domain.Entity;
 import com.practice.cleankanban.domain.model.DomainEventPublisher;
+import com.practice.cleankanban.domain.model.workItem.event.WorkItemCreated;
 
 public class WorkItem extends Entity {
     private String stageId;

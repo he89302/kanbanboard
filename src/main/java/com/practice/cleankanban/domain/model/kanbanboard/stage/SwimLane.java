@@ -2,7 +2,7 @@ package com.practice.cleankanban.domain.model.kanbanboard.stage;
 
 import com.practice.cleankanban.domain.Entity;
 import com.practice.cleankanban.domain.model.DomainEventPublisher;
-import com.practice.cleankanban.domain.model.WorkItemMovedIn;
+import com.practice.cleankanban.domain.model.workItem.event.WorkItemMovedIn;
 import com.practice.cleankanban.domain.model.kanbanboard.WipLimitExceedException;
 import com.practice.cleankanban.domain.model.kanbanboard.stage.event.SwimLaneCreated;
 import com.practice.cleankanban.domain.model.kanbanboard.stage.event.WorkItemMovedOut;
@@ -96,9 +96,6 @@ public class SwimLane extends Entity {
     public boolean uncommittedWorkItemById(String workItemId) {
         for (CommittedWorkItem each:committedWorkItems
              ) {
-            if (!each.isBlock()) {
-                throw new RuntimeException("work item : " + workItemId + " block.");
-            }
             if (each.equals(workItemId)) {
                 committedWorkItems.remove(each);
 

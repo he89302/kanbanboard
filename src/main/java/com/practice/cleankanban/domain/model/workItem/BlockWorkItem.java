@@ -1,39 +1,38 @@
 package com.practice.cleankanban.domain.model.workItem;
 
-import com.practice.cleankanban.domain.Entity;
-import com.practice.cleankanban.domain.model.DomainEventPublisher;
-import com.practice.cleankanban.domain.model.workItem.event.WorkItemBlocked;
+public class BlockWorkItem {
 
-import java.util.ArrayList;
-import java.util.List;
+    private String blockerId;
+    private String workItemId;
+    private boolean status;
 
-@javax.persistence.Entity
-public class BlockWorkItem extends Entity {
-
-    private WorkItem blockWorkItem;
-    private List<String> blockWorkItemIds;
-    private String note;
-
-    public BlockWorkItem(String name) {
-        super("name");
-        blockWorkItemIds = new ArrayList<>();
+    public BlockWorkItem(String blockerId, String workItemId, boolean status) {
+        this.blockerId = blockerId;
+        this.workItemId = workItemId;
+        this.status = status;
     }
 
-
-    public void blockWorkItem(WorkItem workItem) {
-        blockWorkItemIds.add(workItem.getId());
-        DomainEventPublisher.instance().publish(new WorkItemBlocked(
-                                                this.getId(),
-                                                this.getNote(),
-                                                workItem.getId(),
-                                                workItem.getName()));
+    public String getBlockerId() {
+        return blockerId;
     }
 
-    public void setNote(String blockNote) {
-        this.note = blockNote;
+    public void setBlockerId(String blockerId) {
+        this.blockerId = blockerId;
     }
 
-    public String getNote() {
-        return note;
+    public String getWorkItemId() {
+        return workItemId;
+    }
+
+    public void setWorkItemId(String workItemId) {
+        this.workItemId = workItemId;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 }

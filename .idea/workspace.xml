@@ -2,20 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940f0abc-6b07-4ada-bd47-ca986f6006af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/BlockEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/CommittedWorkItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/BlockWorkItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/event/WorkItemBlocked.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/BlockWorkItemSubscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/SingleBlockWorkItemPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/impl/BlockWorkItemUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/gateway/workItem/InMemoryBlockerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/kanban.mdj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/Blocker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/domainevent/block/BlockEventSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/domainevent/block/RegisterBlockEventSourcingSubscriberInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/domainevent/block/RegisterBlockEventSourcingSubscriberOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/domainevent/block/RegisterBlockEventSourcingSubscriberUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/domainevent/block/impl/RegisterBlockEventSourcingSubscriberUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/workItem/block/impl/BlockerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/BlockEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/BlockDomainEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/WorkItemMovedIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/event/WorkItemMovedIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/CommittedWorkItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/CommittedWorkItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/SwimLane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/kanbanboard/stage/SwimLane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/BlockWorkItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/BlockWorkItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/WorkItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/WorkItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/WorkItemCreated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/event/WorkItemCreated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/event/WorkItemBlocked.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/domain/model/workItem/event/WorkItemBlocked.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/kanbanboard/stage/BlockWorkItemSubscriber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/workItem/RegisterFlowEventSourcingSubscriberUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/domainevent/flow/impl/RegisterFlowEventSourcingSubscriberUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/CalculateCycleTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/CalculateCycleTimeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/MoveWorkItemOnSwimLaneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/MoveWorkItemOnSwimLaneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/BlockWorkItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/SingleBlockWorkItemPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/adapter/presenter/kanbanboard/SingleBlockWorkItemPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/practice/cleankanban/usecase/workItem/block/impl/BlockWorkItemUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/cleankanban/usecase/workItem/block/impl/BlockWorkItemUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/BlockEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/CommittedWorkItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/CommittedWorkItem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/SwimLane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/kanbanboard/stage/SwimLane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/workItem/BlockWorkItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/workItem/BlockWorkItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/workItem/WorkItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/workItem/WorkItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/workItem/WorkItemCreated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/workItem/event/WorkItemBlocked.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/domain/model/workItem/event/WorkItemBlocked.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/kanbanboard/stage/BlockWorkItemSubscriber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/RegisterFlowEventSourcingSubscriberUseCaseImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/RegisterFlowEventSourcingSubscriberUseCaseImpl$RegisterFlowEventSubscriberInputImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/RegisterFlowEventSourcingSubscriberUseCaseImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl$MoveCommittedWorkItemInputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl$MoveCommittedWorkItemInputImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/practice/cleankanban/usecase/workItem/move/impl/MoveCommittedWorkItemUseCaseImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CalculateCycleTimeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/CalculateCycleTimeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/MoveWorkItemOnSwimLaneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/MoveWorkItemOnSwimLaneTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/block/BlockWorkItemUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/block/SingleBlockWorkItemPresenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/block/impl/BlockWorkItemUseCaseImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/block/impl/BlockWorkItemUseCaseImpl$BlockWorkItemInputImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/practice/cleankanban/usecase/workItem/block/impl/BlockWorkItemUseCaseImpl.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +89,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -65,15 +104,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.practice.cleankanban.usecase.workItem" />
+      <recent name="com.practice.cleankanban.usecase.workItem.block.impl" />
+      <recent name="com.practice.cleankanban.usecase.workItem.block" />
       <recent name="com.practice.cleankanban.usecase.kanbanboard.stage" />
       <recent name="com.practice.cleankanban.usecase.kanbanboard.board" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.practice.cleankanban.domain.model.kanbanboard.stage" />
-      <recent name="com.practice.cleankanban.domain.model" />
-      <recent name="com.practice.cleankanban.domain.model.event" />
       <recent name="com.practice.cleankanban.domain.model.workItem" />
-      <recent name="com.practice.cleankanban.usecase.workItem.block" />
+      <recent name="com.practice.cleankanban.adapter.gateway.workItem" />
+      <recent name="com.practice.cleankanban.usecase.workItem.block.impl" />
+      <recent name="com.practice.cleankanban.usecase.domainevent.block.impl" />
+      <recent name="com.practice.cleankanban.usecase.domainevent.block" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -88,34 +130,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BlockWorkItemTest.block_posd_on_ready_stage">
-    <configuration name="BlockWorkItemTest.block_posd_on_ready_stage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BlockWorkItemTest">
+    <configuration name="BlockWorkItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kanbanboard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.cleankanban.usecase.workItem.block.*" />
+          <option name="PATTERN" value="com.practice.cleankanban.usecase.domainevent.flow.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.practice.cleankanban.usecase.workItem.block" />
-      <option name="MAIN_CLASS_NAME" value="com.practice.cleankanban.usecase.workItem.block.BlockWorkItemTest" />
-      <option name="METHOD_NAME" value="block_posd_on_ready_stage" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.practice.cleankanban.usecase.workItem" />
+      <option name="MAIN_CLASS_NAME" value="com.practice.cleankanban.usecase.workItem.BlockWorkItemTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveStageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cleankanban" />
+    <configuration name="BlockWorkItemTest.block_posd_on_ready_stage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kanbanboard" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.cleankanban.usecase.kanbanboard.stage.*" />
+          <option name="PATTERN" value="com.practice.cleankanban.usecase.domainevent.flow.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.practice.cleankanban.usecase.kanbanboard.stage" />
-      <option name="MAIN_CLASS_NAME" value="com.practice.cleankanban.usecase.kanbanboard.stage.RemoveStageTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.practice.cleankanban.usecase.workItem" />
+      <option name="MAIN_CLASS_NAME" value="com.practice.cleankanban.usecase.workItem.BlockWorkItemTest" />
+      <option name="METHOD_NAME" value="block_posd_on_ready_stage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BlockWorkItemTest" />
         <item itemvalue="JUnit.BlockWorkItemTest.block_posd_on_ready_stage" />
         <item itemvalue="JUnit.ReorderStageOfBoardTest.move_test_at_position_4_to_same_position_then_remove_test_stage_then_move_ready_at_position_1_to_position_5" />
         <item itemvalue="JUnit.ReorderStageOfBoardTest.move_test_at_position_4_to_same_position" />
         <item itemvalue="JUnit.RemoveStageTest.remove_test_stage_on_board" />
-        <item itemvalue="JUnit.RemoveStageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +251,14 @@
       <workItem from="1567431837801" duration="490000" />
       <workItem from="1567432474594" duration="3667000" />
       <workItem from="1567648074577" duration="281000" />
-      <workItem from="1567654931292" duration="19715000" />
+      <workItem from="1567654931292" duration="20901000" />
+      <workItem from="1568029155207" duration="2614000" />
+      <workItem from="1568097442037" duration="2343000" />
+      <workItem from="1568124726666" duration="1648000" />
+      <workItem from="1568352648212" duration="58000" />
+      <workItem from="1568356079852" duration="302000" />
+      <workItem from="1569064432001" duration="15530000" />
+      <workItem from="1569133678777" duration="4859000" />
     </task>
     <servers />
   </component>
@@ -228,6 +277,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="masterDetails">
     <states>
