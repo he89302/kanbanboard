@@ -14,4 +14,8 @@ public interface AddStageOutput extends Output {
     String getMiniStageId();
 
     void setMiniStageId(String miniStageId);
+
+    String getSwimLaneId();
+
+    void setSwimLaneId(String swimLaneId);
 }

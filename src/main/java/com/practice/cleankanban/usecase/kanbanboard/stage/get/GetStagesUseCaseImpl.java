@@ -1,7 +1,7 @@
 package com.practice.cleankanban.usecase.kanbanboard.stage.get;
 
 import com.practice.cleankanban.domain.model.kanbanboard.stage.Stage;
-import com.practice.cleankanban.usecase.kanbanboard.DtoConvertor;
+import com.practice.cleankanban.usecase.kanbanboard.DtpConverter;
 import com.practice.cleankanban.usecase.kanbanboard.board.BoardRepository;
 import com.practice.cleankanban.usecase.kanbanboard.stage.StageRepository;
 
@@ -29,7 +29,7 @@ public class GetStagesUseCaseImpl implements GetStagesUseCase {
             stages = stageRepository.findByBoardId(input.getBoardId());
         }
 
-        output.setStages(DtoConvertor.convertDtoList(stages, boardRepository));
+        output.setStages(DtpConverter.convertDtoList(stages, boardRepository));
     }
 
     public static GetStagesInput createInput() {

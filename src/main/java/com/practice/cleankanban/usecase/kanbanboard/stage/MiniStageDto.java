@@ -22,6 +22,18 @@ public class MiniStageDto {
         return miniStageId;
     }
 
+    public String getStageId() {
+        return stageId;
+    }
+
+    public List<SwimLaneDto> getSwimLanes() {
+        return swimLanes;
+    }
+
+    public String getMiniStageName() {
+        return miniStageName;
+    }
+
     public SwimLaneDto getDefaultOfSwimLane() {
         return swimLanes.get(0);
     }

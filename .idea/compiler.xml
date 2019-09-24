@@ -6,14 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cleankanban" />
         <module name="kanbanboard" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="kanbanboard" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="cleankanban" options="-parameters" />
       <module name="kanbanboard" options="-parameters" />
     </option>
   </component>

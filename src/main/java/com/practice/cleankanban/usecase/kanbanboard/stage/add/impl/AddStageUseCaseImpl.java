@@ -19,7 +19,8 @@ public class AddStageUseCaseImpl implements AddStageUseCase {
 
         output.setStageId(stage.getId());
         output.setStageName(stage.getName());
-        output.setMiniStageId(stage.getMiniStages().get(0).getId());
+        output.setMiniStageId(stage.getDefaultMiniStage().getId());
+        output.setSwimLaneId(stage.getDefaultSwimLaneOfMiniStage().getId());
     }
 
     public static AddStageInput createInput() {

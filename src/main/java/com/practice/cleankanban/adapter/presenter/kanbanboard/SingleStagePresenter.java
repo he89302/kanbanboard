@@ -13,42 +13,24 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
-@RestController
+
 public class SingleStagePresenter implements AddStageOutput {
     private String stageId;
     private String stageName;
     private String miniStageId;
-
-    @RequestMapping(value = "stage", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity addStageRestfulAPI(@RequestBody StageModel stageModal) {
-        StageRepository repository = new InMemoryStageRepository();
-        AddStageUseCase useCase = new AddStageUseCaseImpl(repository);
-        AddStageInput input = AddStageUseCaseImpl.createInput();
-        AddStageOutput output = this;
-
-        input.setBoardId(stageModal.getBoardId());
-        input.setStageName(stageModal.getName());
-
-        useCase.execute(input, output);
-
-        if (!output.getStageId().isEmpty()) {
-            StageModel model = SingleStagePresenter.createStageModel(output);
-            return ResponseEntity.status(HttpStatus.OK).body(model);
-        }
-
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-    }
+    private String swimLaneId;
 
     public ResponseEntity getStageRestfulAPI(@PathVariable String stageId) {
         return (ResponseEntity) ResponseEntity.status(HttpStatus.CONFLICT);
     }
 
-    private static StageModel createStageModel(AddStageOutput output) {
+    public static StageModel createStageModel(AddStageOutput output, String boardId) {
         StageModel modal = new StageModel();
+        modal.setBoardId(boardId);
         modal.setStageId(output.getStageId());
         modal.setMiniStageId(output.getMiniStageId());
         modal.setName(output.getStageName());
-
+        modal.setSwimLaneId(output.getSwimLaneId());
         return modal;
     }
 
@@ -79,5 +61,15 @@ public class SingleStagePresenter implements AddStageOutput {
     @Override
     public void setMiniStageId(String miniStageId) {
         this.miniStageId = miniStageId;
+    }
+
+    @Override
+    public String getSwimLaneId() {
+        return swimLaneId;
+    }
+
+    @Override
+    public void setSwimLaneId(String swimLaneId) {
+        this.swimLaneId = swimLaneId;
     }
 }

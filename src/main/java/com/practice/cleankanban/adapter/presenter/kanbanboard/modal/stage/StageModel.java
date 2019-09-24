@@ -5,16 +5,10 @@ public class StageModel {
     private String boardId;
     private String stageId;
     private String miniStageId;
+    private String swimLaneId;
     private String name;
 
     public StageModel(){}
-
-    public StageModel(String boardId, String miniStageId, String stageId, String name) {
-        this.setBoardId(boardId);
-        this.setMiniStageId(miniStageId);
-        this.setStageId(stageId);
-        this.setName(name);
-    }
 
     public void setBoardId(String boardId) {
         this.boardId = boardId;
@@ -34,6 +28,14 @@ public class StageModel {
 
     public void setMiniStageId(String miniStageId) {
         this.miniStageId = miniStageId;
+    }
+
+    public String getSwimLaneId() {
+        return swimLaneId;
+    }
+
+    public void setSwimLaneId(String swimLaneId) {
+        this.swimLaneId = swimLaneId;
     }
 
     public String getName() {
